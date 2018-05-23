@@ -1,12 +1,9 @@
-const path =  require('path');
+import path from 'path';
 
-module.exports = {
+export default {
     mode: 'production',
     devtool: 'source-map',
-    context: path.join(__dirname, 'src'),
-    entry: [
-        './index.js'
-    ], 
+    entry: './src/index.js', 
     output: {
         path: path.join(__dirname, 'www'),
         filename: 'bundle.js',
@@ -17,7 +14,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader']
+                use: 'babel-loader'
             }
         ]
     },
