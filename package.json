@@ -1,12 +1,30 @@
 {
-  "name": "react-express-mongo",
+  "name": "react-express-nodejs-mongodb",
   "version": "1.0.0",
-  "description": "MERN Stack",
+  "description": "MEARN Stack",
   "main": "index.js",
   "scripts": {
+    "compile": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusrafaell/react-express-nodejs-mongodb.git"
   },
   "keywords": [],
   "author": "@jesusrafaell",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesusrafaell/react-express-nodejs-mongodb/issues"
+  },
+  "homepage": "https://github.com/jesusrafaell/react-express-nodejs-mongodb#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
 }
